@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <style>
+        body{
+            background-color:  #3B4664;
+        }
+        #box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            height: 100vh;
+        }
+        #innerbox1{
+            position: absolute;
+            display:flex ;
+            
+            align-items: center;
+            background-color: #181F32;
+            height: 15vh;
+            width: 70vh;
+            top: 20vh;
+            border-radius: 10px;
+            
+            
+        }
+        #inputext {
+            
+            font-size: 2em; 
+            color: white;
+            
+            padding-right: 20px; 
+            text-align: right;
+            width: 100%;
+            
+            
+            
+            
+        }
+        #innerbox2{
+            position: absolute;
+            background-color: #181F32;
+            height: 50vh;
+            width: 60vh;
+            top: 40vh;
+            border-radius: 10px;
+            display: grid;
+            grid-template-areas: 
+            "btn1 btn2 btn3 btn4"
+            "btn5 btn6 btn7 btn8"
+            "btn9 btn10 btn11 btn12"
+            "btn13 btn14 btn15 btn16"
+            "btn17 btn17 btn18 btn18"
+            ;
+            padding: 20px 20px 20px 40px;
+            align-items: center;
+            
+
+        }
+        #innerbox2 > button {
+            
+            height: 80%;
+            width: 80%;
+            border-radius: 6px;
+            border: none;
+            color: #3B4664;
+            font-size:20px;
+            font-weight: 800;
+        }
+        
+        #btn1 {
+            grid-area: btn1;
+           
+        }
+
+        #btn2 {
+
+            grid-area: btn2;
+        }
+
+        #btn3 {
+            grid-area: btn3;
+        }
+
+        #btn4 {
+            grid-area: btn4;
+        }
+
+        #btn5 {
+            grid-area: btn5;
+        }
+
+        #btn6 {
+            grid-area: btn6;
+        }
+
+        #btn7 {
+            grid-area: btn7;
+        }
+
+        #btn8 {
+            grid-area: btn8;
+        }
+
+        #btn9 {
+            grid-area: btn9;
+        }
+
+        #btn10 {
+            grid-area: btn10;
+        }
+
+        #btn11 {
+            grid-area: btn11;
+        }
+
+        #btn12 {
+            grid-area: btn12;
+        }
+
+        #btn13 {
+            grid-area: btn13;
+        }
+
+        #btn14 {
+            grid-area: btn14;
+        }
+
+        #btn15 {
+            grid-area: btn15;
+        }
+
+        #btn16 {
+            grid-area: btn16;
+        }
+
+        #btn17 {
+            grid-area: btn17;
+            
+            
+            
+        }
+
+        #btn18 {
+            grid-area: btn18;
+            
+        }
+        
+        
+
+
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="innerbox1"><h1 id="inputext"></h1></div>
+        <div id="innerbox2">
+            <button id="btn1" >7</button>
+            <button id="btn2">8</button>
+            <button id="btn3">9</button>
+            <button id="btn4"  style="color: white;
+            font-size: large;
+            background-color:#647299;
+            font-weight: bold;">DEL</button>
+            <button id="btn5" >4</button>
+            <button id="btn6">5</button>
+            <button id="btn7" >6</button>
+            <button id="btn8" >+</button>
+            <button id="btn9">1</button>
+            <button id="btn10">2</button>
+            <button id="btn11" >3</button>
+            <button id="btn12">-</button>
+            <button id="btn13" >.</button>
+            <button id="btn14" >0</button>
+            <button id="btn15" >/</button>
+            <button id="btn16" >X</button>
+            <button id="btn17"   style="width: 90%;color: white ;
+            background-color:#647299;
+            font-size: large;
+            font-weight: bold; 
+            ">RESET</button>
+            <button id="btn18" style="width: 90%;color: white;
+            font-size: large;
+            background-color: #D13F30;
+            font-weight: bold;">=</button>
+            
+            
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
